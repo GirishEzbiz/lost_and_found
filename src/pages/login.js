@@ -22,17 +22,16 @@ const Login = () => {
         <div class="mb-3 position-relative">
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password" placeholder="enter password" />
-          <a href="#" class="forgot-password">Forgot Password</a>
         </div>
-
-        <button type="button" class="btn btn-login mb-3">Log in</button>
-
+        <div className="text-end">
+          <a href="#" class="forgot-password ms-auto" style={{ color: '#242760' }}>Forgot Password</a>
+        </div>
+        <button type="button" class="btn btn-login mb-3 mt-5 p-3">Log in</button>
         <div class="text-center mb-3">
           <span>or Continue with</span>
         </div>
-
-        <button type="button" class="btn btn-google">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google Logo" />
+        <button type="button" class="btn btn-google p-3">
+          <img src="https://w7.pngwing.com/pngs/63/1016/png-transparent-google-logo-google-logo-g-suite-chrome-text-logo-chrome.png" alt="Google Logo" />
           Sign in with Google
         </button>
       </form>
