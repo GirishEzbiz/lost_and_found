@@ -40,3 +40,77 @@ a {
     color-scheme: dark;
   }
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.form-control {
+  width: Fill (335px)px;
+  height: Fixed (56px)px;
+  padding: 15px 16px 15px 16px;
+  gap: 8px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1.2px 0px 0px 0px;
+  opacity: 0px;
+  /* color: #A8AEBF; */
+}
+
+.btnlogin {
+  width: 100% !important;
+  height: 56px !important;
+  top: 581px;
+  left: 20px;
+  padding: 0px 16px 0px 16px;
+  gap: 8px;
+  opacity: 0px;
+  background-color: #EBEDF0 !important;
+  border-radius: 50px;
+}
+
+.btn-google {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.btn-google img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 16px !important;
+  color: #6c757d;
+}
+
+h4 {
+  font-size: 24px !important;
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: #A8AEBF !important;
+}
+
+
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
