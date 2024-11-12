@@ -53,14 +53,13 @@ body {
 }
 
 .form-control {
-  width: Fill (335px)px;
-  height: Fixed (56px)px;
+  width: 335px;
+  height: 56px;
   padding: 15px 16px 15px 16px;
   gap: 8px;
   border-radius: 8px 0px 0px 0px;
   border: 1.2px 0px 0px 0px;
   opacity: 0px;
-  /* color: #A8AEBF; */
 }
 
 .btnlogin {
