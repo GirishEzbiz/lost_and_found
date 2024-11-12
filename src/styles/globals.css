@@ -170,7 +170,21 @@ h2 {
   color: #363636;
 }
 
+.fs-14 {
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: 0.03em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #363636;
+}
+
 .dashboardcard {
   border-radius: 15px !important;
   border: 0;
+}
+
+.scannerwidth {
+  width: 62% !important;
 }

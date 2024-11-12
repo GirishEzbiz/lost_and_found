@@ -50,9 +50,11 @@ const Login = () => {
             Forgot Password
           </Link>
         </div>
-        <button type="button" className="btn btnlogin mb-3 mt-5 p-3">
-          Log in
-        </button>
+        <Link href="/dashboard" className="forgot-password ms-auto">
+          <button type="button" className="btn btnlogin mb-3 mt-5 p-3">
+            Log in
+          </button>
+        </Link>
         <div class="d-flex align-items-center">
           <hr class="flex-grow-1 border-dark" />
           <span class="mx-2 text-muted">or Continue with</span>
