@@ -26,7 +26,7 @@ const dashboard = () => {
                         <h2 className="text-left fw-bold mt-2">Dashboard</h2>
                     </div>
                 </div>
-                <div className="row pt-5 row-cols-2">
+                <div className="row pt-3 row-cols-2">
                     <div className='col'>
                         <div class="card py-4 dashboardcard">
                             <div class="card-body text-center">
