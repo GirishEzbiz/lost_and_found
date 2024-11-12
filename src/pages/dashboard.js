@@ -84,7 +84,7 @@ const dashboard = () => {
                 </div>
             </div>
             <div className='container'>
-                <div className='row position-absolute bottom-0' style={{ background: '#fff' }}>
+                <div className='row position-absolute bottom-0'>
                     <div className='col-2'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
