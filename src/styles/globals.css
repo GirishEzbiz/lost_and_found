@@ -53,10 +53,10 @@ body {
 }
 
 .form-control {
-  width: 335px;
+  width: 100%;
   height: 56px;
   padding: 15px 16px 15px 16px;
-  gap: 8px;
+  gap: 8px !important;
   border-radius: 8px 0px 0px 0px;
   border: 1.2px 0px 0px 0px;
   opacity: 0px;
