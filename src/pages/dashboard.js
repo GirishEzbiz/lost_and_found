@@ -28,7 +28,7 @@ const dashboard = () => {
                 </div>
                 <div className="row pt-5 row-cols-2">
                     <div className='col'>
-                        <div class="card py-5 dashboardcard">
+                        <div class="card py-4 dashboardcard">
                             <div class="card-body text-center">
                                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.841064" y="0.733597" width="55" height="55" rx="16" fill="#DBDAF7" />
@@ -39,7 +39,7 @@ const dashboard = () => {
                         </div>
                     </div>
                     <div className='col'>
-                        <div class="card py-5 dashboardcard">
+                        <div class="card py-4 dashboardcard">
                             <div class="card-body text-center">
                                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <rect x="0.5" y="0.733597" width="55" height="55" rx="16" fill="#F6E3DB" />
@@ -55,8 +55,8 @@ const dashboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col mt-5'>
-                        <div class="card py-5 dashboardcard">
+                    <div className='col mt-3'>
+                        <div class="card py-4 dashboardcard">
                             <div class="card-body text-center">
                                 <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.305115" width="55" height="59.1498" rx="16" fill="#D8F3F1" />
@@ -69,8 +69,8 @@ const dashboard = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col mt-5'>
-                        <div class="card py-5 dashboardcard">
+                    <div className='col mt-3'>
+                        <div class="card py-4 dashboardcard">
                             <div class="card-body text-center">
                                 <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />
@@ -85,7 +85,7 @@ const dashboard = () => {
             </div>
             <div className='container'>
                 <div className='row position-absolute bottom-0' style={{ background: '#fff' }}>
-                    <div className='col'>
+                    <div className='col-2'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />
@@ -95,7 +95,7 @@ const dashboard = () => {
                             <h5 class="card-title mt-3">Home</h5>
                         </button>
                     </div>
-                    <div className='col p-0 mx-2'>
+                    <div className='col-2 p-0 mx-2'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />
@@ -105,7 +105,7 @@ const dashboard = () => {
                             <h5 class="card-title mt-3">items</h5>
                         </button>
                     </div>
-                    <div className='col'>
+                    <div className='col-2'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg style={{ scale: '1.4' }} width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />
@@ -115,7 +115,7 @@ const dashboard = () => {
                             <h5 class="card-title mt-3">Scan</h5>
                         </button>
                     </div>
-                    <div className='col'>
+                    <div className='col-2'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />
@@ -125,7 +125,7 @@ const dashboard = () => {
                             <h5 class="card-title mt-3">notification</h5>
                         </button>
                     </div>
-                    <div className='col'>
+                    <div className='col-2 ms-4'>
                         <button className='text-center border-0 bg-transparent'>
                             <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.341187" y="0.234924" width="55" height="59.1498" rx="16" fill="#D0EDFB" />

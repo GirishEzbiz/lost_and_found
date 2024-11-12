@@ -67,8 +67,8 @@ body {
   top: 581px;
   left: 20px;
   padding: 0px 16px 0px 16px;
-  gap: 8px;
-  opacity: 0px;
+  gap: 8px !important;
+  opacity: 1;
   background-color: #EBEDF0 !important;
   border-radius: 50px;
 }
@@ -79,8 +79,8 @@ body {
   top: 581px;
   left: 20px;
   padding: 0px 16px 0px 16px;
-  gap: 8px;
-  opacity: 0px;
+  gap: 8px !important;
+  opacity: 1;
   color: #fff;
   background-color: #242760 !important;
   border-radius: 50px;
@@ -91,10 +91,10 @@ body {
   height: 56px;
   top: 667.14px;
   left: 24.22px;
-  gap: 0px;
+  gap: 0px !important;
   border-radius: 50px;
   border: 2px 0px 0px 0px;
-  opacity: 0px;
+  opacity: 1;
   border-color: #242760;
 }
 
