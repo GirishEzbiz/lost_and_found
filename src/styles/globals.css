@@ -75,6 +75,31 @@ body {
   border-radius: 50px;
 }
 
+.createaccount {
+  width: 100% !important;
+  height: 56px !important;
+  top: 581px;
+  left: 20px;
+  padding: 0px 16px 0px 16px;
+  gap: 8px;
+  opacity: 0px;
+  color: #fff;
+  background-color: #242760 !important;
+  border-radius: 50px;
+}
+
+.createlogin {
+  width: 100%;
+  height: 56px;
+  top: 667.14px;
+  left: 24.22px;
+  gap: 0px;
+  border-radius: 50px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border-color: #242760;
+}
+
 .btn-google {
   width: 100%;
   border-radius: 10px;
@@ -113,4 +138,41 @@ input::placeholder {
   right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700 !important;
+  line-height: 33.89px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700 !important;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.card {
+  background: #f8f8fb;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: 0.03em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #363636;
+}
+
+.dashboardcard {
+  border-radius: 15px !important;
+  border: 0;
 }
