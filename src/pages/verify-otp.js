@@ -1,4 +1,3 @@
-// pages/verify-otp.js
 const VerifyOTP = () => {
   return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100">
