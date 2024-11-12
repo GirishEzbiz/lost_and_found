@@ -23,7 +23,7 @@ const scanner = () => {
                     </div>
                 </div>
             </div>
-            <Support />
+            <Support name="shubham" />
         </>
     );
 };
