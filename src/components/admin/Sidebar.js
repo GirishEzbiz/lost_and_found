@@ -6,6 +6,7 @@ import {
   FaCog,
   FaChartBar,
   FaSignOutAlt,
+  FaQrcode,
 } from "react-icons/fa"; // Import react-icons
 
 export default function Header() {
@@ -24,6 +25,12 @@ export default function Header() {
           className="list-group-item list-group-item-action "
         >
           <FaHome className="me-2" /> Dashboard
+        </Link>
+        <Link
+          href="/admin/qr_generate"
+          className="list-group-item list-group-item-action "
+        >
+          <FaQrcode className="me-2" /> QR Generate
         </Link>
         <Link
           href="/admin/users"
