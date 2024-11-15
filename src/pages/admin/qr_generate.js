@@ -1,3 +1,4 @@
+import AdminLayout from "@/components/AdminLayout";
 import React, { useState } from "react";
 import { Modal, Button, Table, Form } from "react-bootstrap";
 
@@ -32,87 +33,89 @@ export default function QrGenerate() {
   };
 
   return (
-    <div className="container mt-4">
-      <h3>QR Code List</h3>
+    <AdminLayout>
+      <div className="container mt-4">
+        <h3>QR Code List</h3>
 
-      {/* Button to trigger the modal */}
-      <Button variant="primary" onClick={handleShowModal}>
-        Add QR Code
-      </Button>
+        {/* Button to trigger the modal */}
+        <Button variant="primary" onClick={handleShowModal}>
+          Add QR Code
+        </Button>
 
-      {/* Table for listing QR codes */}
-      <Table striped bordered hover className="mt-3">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Title</th>
-            <th>Validity</th>
-            <th>Number of QR</th>
-          </tr>
-        </thead>
-        <tbody>
-          {qrList.length > 0 ? (
-            qrList.map((qr, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{qr.title}</td>
-                <td>{qr.validity}</td>
-                <td>{qr.numOfQr}</td>
-              </tr>
-            ))
-          ) : (
+        {/* Table for listing QR codes */}
+        <Table striped bordered hover className="mt-3">
+          <thead>
             <tr>
-              <td colSpan="4" className="text-center">
-                No QR Codes Available
-              </td>
+              <th>#</th>
+              <th>Title</th>
+              <th>Validity</th>
+              <th>Number of QR</th>
             </tr>
-          )}
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {qrList.length > 0 ? (
+              qrList.map((qr, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{qr.title}</td>
+                  <td>{qr.validity}</td>
+                  <td>{qr.numOfQr}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="4" className="text-center">
+                  No QR Codes Available
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </Table>
 
-      {/* Modal for the QR code form */}
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Add QR Code</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form onSubmit={handleFormSubmit}>
-            <Form.Group controlId="formTitle">
-              <Form.Label>Title</Form.Label>
-              <Form.Control
-                type="text"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-                required
-              />
-            </Form.Group>
+        {/* Modal for the QR code form */}
+        <Modal show={showModal} onHide={handleCloseModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>Add QR Code</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form onSubmit={handleFormSubmit}>
+              <Form.Group controlId="formTitle">
+                <Form.Label>Title</Form.Label>
+                <Form.Control
+                  type="text"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                  required
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formValidity">
-              <Form.Label>Validity</Form.Label>
-              <Form.Control
-                type="date"
-                value={validity}
-                onChange={(e) => setValidity(e.target.value)}
-                required
-              />
-            </Form.Group>
+              <Form.Group controlId="formValidity">
+                <Form.Label>Validity</Form.Label>
+                <Form.Control
+                  type="date"
+                  value={validity}
+                  onChange={(e) => setValidity(e.target.value)}
+                  required
+                />
+              </Form.Group>
 
-            <Form.Group controlId="formNumOfQr">
-              <Form.Label>Number of QR Codes</Form.Label>
-              <Form.Control
-                type="number"
-                value={numOfQr}
-                onChange={(e) => setNumOfQr(e.target.value)}
-                required
-              />
-            </Form.Group>
+              <Form.Group controlId="formNumOfQr">
+                <Form.Label>Number of QR Codes</Form.Label>
+                <Form.Control
+                  type="number"
+                  value={numOfQr}
+                  onChange={(e) => setNumOfQr(e.target.value)}
+                  required
+                />
+              </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-3">
-              Add
-            </Button>
-          </Form>
-        </Modal.Body>
-      </Modal>
-    </div>
+              <Button variant="primary" type="submit" className="mt-3">
+                Add
+              </Button>
+            </Form>
+          </Modal.Body>
+        </Modal>
+      </div>
+    </AdminLayout>
   );
 }
