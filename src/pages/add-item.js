@@ -4,49 +4,49 @@ import Support from "./support";
 const ListItem = () => {
   return (
     <>
-    <div style={styles.container}>
-    <div style={styles.header}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.57 5.92999L3.5 12L9.57 18.07" stroke="#19191A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M20.5 12H3.67004" stroke="#19191A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>     
-      </div>
-        <h2 className="text-center">List item</h2>
-      <div style={styles.searchBar} className="mt-3">
-        <input type="text" placeholder="Search item" style={styles.searchInput} />
-      </div>
-        <button className="float-end" style={styles.addButton}>+ Add Item</button>
-    </div>
-    <div className="container">
-      <div style={styles.itemGroup}>
-        <div style={styles.group} className="mt-1">
-          <h3 style={styles.groupTitle}>Item 1</h3>
-          <div style={styles.cardContainer}>
-            {[1, 2, 3,4].map((item) => (
-              <div key={item} style={styles.card}>
-                <div style={styles.imagePlaceholder}></div>
-                <p style={styles.cardText}>Name</p>
-                <p style={styles.cardText}>Details</p>
-                <p style={styles.cardText}>Description</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div style={styles.group}>
-          <h3 style={styles.groupTitle}>Item 2</h3>
-          <div style={styles.cardContainer}>
-            {[1, 2, 3,4].map((item) => (
-              <div key={item} style={styles.card}>
-                <div style={styles.imagePlaceholder}></div>
-                <p style={styles.cardText}>Name</p>
-                <p style={styles.cardText}>Details</p>
-                <p style={styles.cardText}>Description</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container mt-5">
+        <form>
+            <div style={styles.header}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.57 5.92999L3.5 12L9.57 18.07" stroke="#19191A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.5 12H3.67004" stroke="#19191A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <h2 className="text-center">Add item</h2>
+                <div style={styles.searchBar} className="mt-3">
+                    <input type="text" placeholder="Search item" style={styles.searchInput} />
+                </div>
+                <button type="file" class="btn btn-outline-secondary d-flex align-items-center w-100 p-0">
+                    <input class="form-control" type="file" id="formFile" />
+                </button>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="itemName" class="form-label fw-bold">Item Name</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Melissa Peters" />
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label fw-bold">Category</label>
+                <input type="text" class="form-control" id="category" placeholder="Enter category" />
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label fw-bold">Description</label>
+                <textarea class="form-control" id="description" rows="2" placeholder="Users can scan the QR code"></textarea>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-6">
+                    <label for="latitude" class="form-label fw-bold">Latitude</label>
+                    <input type="text" class="form-control" id="latitude" placeholder="985.623.147" />
+                </div>
+                <div class="col-md-6 col-6">
+                    <label for="longitude" class="form-label fw-bold">Longitude</label>
+                    <input type="text" class="form-control" id="longitude" placeholder="985.623.148" />
+                </div>
+            </div>
+        </form>
+  </div>
     <Support />
     </>
   );
