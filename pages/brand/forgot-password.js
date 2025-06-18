@@ -260,8 +260,8 @@ const ForgotPassword = () => {
               <Card.Body className="p-4">
                 <div className="text-center mb-4">
                   <Image
-                    width={135}
-                    height={40}
+                    width={75}
+                    height={70}
                     src="/assets/new_qritagya_logo.png"
                     alt="Logo"
                   />

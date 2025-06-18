@@ -55,8 +55,8 @@ const NavbarHorizontal = () => {
             <Image
               src="/assets/new_qritagya_logo.png" // Correct path (no ./)
               alt="Lost and Found Logo"
-              width={160} // Required width
-              height={40} // Required height
+              width={75} // Required width
+              height={70} // Required height
               priority // Optional: Ensures the image loads faster
             />
           </Link>

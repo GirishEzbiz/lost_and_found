@@ -78,8 +78,8 @@ const ConnectItemIntro = () => {
           <Image
             src="/assets/new_qritagya_logo.png"
             alt="Qritagya Logo"
-            width={180}
-            height={50}
+            width={105}
+            height={70}
             priority
           />
         </Link>

@@ -82,8 +82,8 @@ const Login = () => {
           <Image
             src="/assets/new_qritagya_logo.png"
             alt="QRITAGYA Logo"
-            width={160}
-            height={40}
+            width={75}
+            height={70}
             priority
           />
         </Link>

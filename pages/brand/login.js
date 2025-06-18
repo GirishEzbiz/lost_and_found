@@ -93,8 +93,8 @@ const AdminLogin = () => {
                 <div className="text-center mb-4">
                   <Image
                     src="/assets/new_qritagya_logo.png"
-                    width={"160"}
-                    height={"40"}
+                    width={"75"}
+                    height={"70"}
                   />
                   <h3 className="fw-bold pt-1">Brand Login</h3>
                   <p className="text-muted mb-0">Welcome back! Please login.</p>

@@ -204,8 +204,8 @@ const Signup = () => {
             <Image
               src="/assets/new_qritagya_logo.png"
               alt="Lost and Found Logo"
-              width={160} // Required width
-              height={40}
+              width={75} // Required width
+              height={70}
               priority
             />
           </Link>

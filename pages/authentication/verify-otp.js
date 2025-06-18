@@ -221,7 +221,7 @@ const VerifyOTP = () => {
         <img
           src="/assets/new_qritagya_logo.png" // ✅ top image
           alt="Top Logo"
-          style={{ width: "140px", height: "auto" }}
+          style={{ width: "75px", height: "auto" }}
         />
       </div>
 

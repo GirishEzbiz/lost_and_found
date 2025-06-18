@@ -65,8 +65,8 @@ const Dashboard = () => {
               <Image
                 src="/assets/new_qritagya_logo.png"
                 alt="Lost and Found Logo"
-                 width={140} // Required width
-              height={35}
+                 width={75} // Required width
+              height={70}
                 priority
               />
               {/* Notification Bell */}
