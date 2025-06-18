@@ -1,0 +1,128 @@
+// Import Inter font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Import Font Awesome and Feather CSS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css");
+@import url("/fonts/feather-icons/feather.css");
+
+
+
+// Import Bootstrap functions and theme files
+@import "~bootstrap/scss/functions";
+@import "user-variables";
+@import "theme/variables";
+@import "theme/utilities";
+@import "~bootstrap/scss/bootstrap";
+@import "theme/theme";
+@import "user";
+
+.qrscan-container {
+    position: relative;
+}
+.form-label{
+    color:#0000006e!important;
+}
+.qrscan-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrscanclose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.qrscanbutton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hover-shadow:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.qrscanbutton:hover {
+    background-color: #45a049;
+}
+.scanner-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+}
+
+.scanner-aligner-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    border: 2px dashed white;
+    box-sizing: border-box;
+}
+// Custom SweetAlert2 Styling
+.swal2-popup {
+    width: 300px;
+    font-size: 14px;
+}
+
+.swal2-title {
+    font-size: 16px;    
+    text-align: center;   
+    
+  }
+
+  .consent-popup {
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #fff; /* optional: clean background */
+    padding: 0 !important;
+  }
+  
+ 
+
+.swal2-content {
+    font-size: 12px;
+}
+
+// Custom heading permalink style
+.heading-permalink {
+    color: transparent;
+    margin-left: -2rem;
+
+    &:hover {
+        color: transparent;
+    }
+
+    &::before {
+        color: rgba(82, 95, 127, 0);
+        content: "#";
+    }
+
+    &:hover::before {
+        color: $primary; // Ensure $primary is defined in imported variables
+    }
+}

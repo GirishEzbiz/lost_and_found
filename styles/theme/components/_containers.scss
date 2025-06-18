@@ -1,0 +1,29 @@
+.container-fluid {
+    width: 100%; /* Default width for extra small screens (less than 576px) */
+    
+    /* Small screens (576px and up) */
+    @media (min-width: 576px) {
+      width: 100%; /* Width remains 100% on small screens */
+    }
+  
+    /* Medium screens (768px and up) */
+    @media (min-width: 768px) {
+      width: 85%; /* Width becomes 85% on medium screens */
+    }
+  
+    /* Large screens (992px and up) */
+    @media (min-width: 992px) {
+      width: 85%; /* Width remains 85% on large screens */
+    }
+  
+    /* Extra large screens (1200px and up) */
+    @media (min-width: 1200px) {
+      width: 85%; /* Width remains 85% on extra large screens */
+    }
+  
+    /* Extra extra large screens (1400px and up) */
+    @media (min-width: 1400px) {
+      width: 85%; /* Width remains 85% on extra extra large screens */
+    }
+  }
+  
